@@ -14,6 +14,8 @@
 		DFB04A27206457CC000B3074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */; };
 		DFB04A32206457CC000B3074 /* NHLStatTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A31206457CC000B3074 /* NHLStatTrackTests.swift */; };
 		DFB04A3D206457CC000B3074 /* NHLStatTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A3C206457CC000B3074 /* NHLStatTrackUITests.swift */; };
+		DFB04A4E206473E1000B3074 /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A4D206473E1000B3074 /* Stat.png */; };
+		DFB04A50206473E7000B3074 /* Nav.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A4F206473E7000B3074 /* Nav.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DFB04A38206457CC000B3074 /* NHLStatTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHLStatTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB04A3C206457CC000B3074 /* NHLStatTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLStatTrackUITests.swift; sourceTree = "<group>"; };
 		DFB04A3E206457CC000B3074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB04A4D206473E1000B3074 /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stat.png; sourceTree = "<group>"; };
+		DFB04A4F206473E7000B3074 /* Nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		DFB04A10206457CC000B3074 = {
 			isa = PBXGroup;
 			children = (
+				DFB04A4C206473D2000B3074 /* Resources */,
 				DFB04A1B206457CC000B3074 /* NHLStatTrack */,
 				DFB04A30206457CC000B3074 /* NHLStatTrackTests */,
 				DFB04A3B206457CC000B3074 /* NHLStatTrackUITests */,
@@ -123,6 +128,15 @@
 				DFB04A3E206457CC000B3074 /* Info.plist */,
 			);
 			path = NHLStatTrackUITests;
+			sourceTree = "<group>";
+		};
+		DFB04A4C206473D2000B3074 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFB04A4F206473E7000B3074 /* Nav.png */,
+				DFB04A4D206473E1000B3074 /* Stat.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +248,9 @@
 			files = (
 				DFB04A27206457CC000B3074 /* LaunchScreen.storyboard in Resources */,
 				DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */,
+				DFB04A50206473E7000B3074 /* Nav.png in Resources */,
 				DFB04A22206457CC000B3074 /* Main.storyboard in Resources */,
+				DFB04A4E206473E1000B3074 /* Stat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
