@@ -16,5 +16,7 @@ class MainController: UIViewController {
         
     }*/
     
+    @IBAction func menuTapped(_ sender: Any) {
+    }
     
 }

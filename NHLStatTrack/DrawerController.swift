@@ -10,8 +10,13 @@ import UIKit
 
 class DrawerController: UIViewController {
     
-    var delegate:DrawerControllerDelegate?
-    var options:Array<String>!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var options:Array<Option>!
+    
+    enum CellIdentifiers {
+        static let OptionCell = "OptionCell"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,15 +25,25 @@ class DrawerController: UIViewController {
     
 }
 
-extension DrawerController:UITableViewDataSource {
+// MARK: Table View Data Source
+
+/*extension DrawerController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return options.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Options", for: IndexPath) as! String
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.OptionCell, for: indexPath) as! OptionCell
+        cell.configureForOption(options[indexPath.row])
         return cell
     }
     
-}
+}*/
+
+// MARK: Table View Delegate
+
+/*extension DrawerController:UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
+}*/

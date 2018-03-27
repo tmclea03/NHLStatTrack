@@ -9,5 +9,5 @@
 import UIKit
 
 protocol DrawerControllerDelegate {
-    func didSelectOpenDrawer()
+    func didSelectOption(_ option:Option)
 }

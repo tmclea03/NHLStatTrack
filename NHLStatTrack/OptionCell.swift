@@ -10,5 +10,12 @@ import UIKit
 
 class OptionCell: UITableViewCell {
     
-    func configureForOption()
+    @IBOutlet weak var optionImageView: UIImageView!
+    @IBOutlet weak var optionLabel: UILabel!
+    
+    
+    func configureForOption(_ option:Option) {
+        optionImageView.image = option.image
+        optionLabel.text = option.title
+    }
 }

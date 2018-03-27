@@ -19,10 +19,10 @@ struct Option {
     
     static func allOpts()->[Option] {
         return [
-            Option(title: "Live", image:UIImage(named:"")), //SCORES
-            Option(title: "Standings", image:UIImage(named:"")), //TEAMS
-            Option(title: "Teams", image:UIImage(named:"")), //STANDINGS
-            Option(title: "", image:UIImage(named:"")), //LIVE
+            Option(title: "Live", image:UIImage(named:"live.png")), //SCORES
+            Option(title: "Standings", image:UIImage(named:"cup.png")), //TEAMS
+            Option(title: "Teams", image:UIImage(named:"jersey.png")), //STANDINGS
+            Option(title: "Schedule", image:UIImage(named:"calendar.png")), //LIVE
         ]
     }
 }
