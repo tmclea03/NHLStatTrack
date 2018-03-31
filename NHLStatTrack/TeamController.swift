@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 class TeamController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -16,6 +17,17 @@ class TeamController: UIViewController {
 
         createMenus()
         customizeBar()
+        //-------------------------------------------------------------------------------------------
+        let test = APIRequest()
+        test.makeRequest(targetURL:"http://httpbin.org/get") { success in
+            if success {
+                print(test.content)
+            }
+        }
+        print("After")
+        
+        
+        //-------------------------------------------------------------------------------------------
         
         // Do any additional setup after loading the view.
     }
