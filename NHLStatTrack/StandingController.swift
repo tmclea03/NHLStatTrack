@@ -10,12 +10,22 @@ import UIKit
 
 class StandingController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var atlanticTeams: UITextView!
+    @IBOutlet weak var metroTeams: UITextView!
+    @IBOutlet weak var centralTeams: UITextView!
+    @IBOutlet weak var pacificTeams: UITextView!
+    @IBOutlet weak var atlanticScores: UITextView!
+    @IBOutlet weak var metroScores: UITextView!
+    @IBOutlet weak var centralScores: UITextView!
+    @IBOutlet weak var pacificScores: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         createMenus()
         customizeBar()
+        populateStandings()
         
         // Do any additional setup after loading the view.
     }
@@ -56,6 +66,10 @@ class StandingController: UIViewController {
         super.applicationFinishedRestoringState()
     }
     
+    func populateStandings() {
+        atlanticTeams.text = "Lightning\n"
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -65,5 +79,4 @@ class StandingController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

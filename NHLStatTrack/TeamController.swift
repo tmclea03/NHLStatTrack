@@ -9,7 +9,7 @@
 import UIKit
 import SQLite3
 
-class TeamController: UIViewController {
+class TeamController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
