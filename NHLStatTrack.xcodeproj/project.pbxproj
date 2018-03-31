@@ -17,6 +17,68 @@
 		DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */; };
 		DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */; };
 		DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEC206AE77900F22FB9 /* LiveController.swift */; };
+		DF8C916E206EB278000AFDB1 /* Capitals.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C914F206EB272000AFDB1 /* Capitals.png */; };
+		DF8C916F206EB278000AFDB1 /* Flyers.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9150206EB272000AFDB1 /* Flyers.png */; };
+		DF8C9170206EB278000AFDB1 /* Wild.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9151206EB272000AFDB1 /* Wild.png */; };
+		DF8C9171206EB278000AFDB1 /* Knights.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9152206EB273000AFDB1 /* Knights.png */; };
+		DF8C9172206EB278000AFDB1 /* Leafs.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9153206EB273000AFDB1 /* Leafs.png */; };
+		DF8C9173206EB278000AFDB1 /* Devils.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9154206EB273000AFDB1 /* Devils.png */; };
+		DF8C9174206EB278000AFDB1 /* Panthers.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9155206EB273000AFDB1 /* Panthers.png */; };
+		DF8C9175206EB278000AFDB1 /* Sabers.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9156206EB273000AFDB1 /* Sabers.png */; };
+		DF8C9176206EB278000AFDB1 /* Canadians.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9157206EB274000AFDB1 /* Canadians.png */; };
+		DF8C9177206EB278000AFDB1 /* Oilers.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9158206EB274000AFDB1 /* Oilers.png */; };
+		DF8C9178206EB278000AFDB1 /* Coyotes.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9159206EB274000AFDB1 /* Coyotes.png */; };
+		DF8C9179206EB278000AFDB1 /* Rangers.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C915A206EB274000AFDB1 /* Rangers.png */; };
+		DF8C917A206EB278000AFDB1 /* Kings.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C915B206EB274000AFDB1 /* Kings.png */; };
+		DF8C917B206EB278000AFDB1 /* Ducks.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF8C915C206EB275000AFDB1 /* Ducks.gif */; };
+		DF8C917C206EB278000AFDB1 /* Predators.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C915D206EB275000AFDB1 /* Predators.png */; };
+		DF8C917D206EB278000AFDB1 /* Wings.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C915E206EB275000AFDB1 /* Wings.png */; };
+		DF8C917E206EB278000AFDB1 /* Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C915F206EB275000AFDB1 /* Stars.png */; };
+		DF8C917F206EB278000AFDB1 /* Bruins.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9160206EB275000AFDB1 /* Bruins.png */; };
+		DF8C9180206EB278000AFDB1 /* Canucks.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9161206EB275000AFDB1 /* Canucks.png */; };
+		DF8C9181206EB278000AFDB1 /* Lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9162206EB276000AFDB1 /* Lightning.png */; };
+		DF8C9182206EB278000AFDB1 /* Flames.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9163206EB276000AFDB1 /* Flames.png */; };
+		DF8C9183206EB278000AFDB1 /* Blues.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9164206EB276000AFDB1 /* Blues.png */; };
+		DF8C9184206EB278000AFDB1 /* Hurricanes.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9165206EB276000AFDB1 /* Hurricanes.png */; };
+		DF8C9185206EB278000AFDB1 /* Blackhawks.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9166206EB276000AFDB1 /* Blackhawks.png */; };
+		DF8C9186206EB278000AFDB1 /* Jets.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9167206EB277000AFDB1 /* Jets.png */; };
+		DF8C9187206EB278000AFDB1 /* Penguins.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9168206EB277000AFDB1 /* Penguins.png */; };
+		DF8C9188206EB278000AFDB1 /* Senators.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9169206EB277000AFDB1 /* Senators.png */; };
+		DF8C9189206EB278000AFDB1 /* Islanders.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C916A206EB277000AFDB1 /* Islanders.png */; };
+		DF8C918A206EB278000AFDB1 /* Sharks.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C916B206EB278000AFDB1 /* Sharks.png */; };
+		DF8C918B206EB278000AFDB1 /* Avalanche.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C916C206EB278000AFDB1 /* Avalanche.png */; };
+		DF8C918C206EB278000AFDB1 /* Jackets.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF8C916D206EB278000AFDB1 /* Jackets.gif */; };
+		DF8C91AE206EBF2D000AFDB1 /* Ducks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C918F206EBF2A000AFDB1 /* Ducks@40px.png */; };
+		DF8C91AF206EBF2D000AFDB1 /* Knights@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9190206EBF2A000AFDB1 /* Knights@40px.png */; };
+		DF8C91B0206EBF2D000AFDB1 /* Sabers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9191206EBF2A000AFDB1 /* Sabers@40px.png */; };
+		DF8C91B1206EBF2D000AFDB1 /* Senators@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9192206EBF2A000AFDB1 /* Senators@40px.png */; };
+		DF8C91B2206EBF2D000AFDB1 /* Kings@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9193206EBF2A000AFDB1 /* Kings@40px.png */; };
+		DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9194206EBF2A000AFDB1 /* Stars@40px.png */; };
+		DF8C91B4206EBF2D000AFDB1 /* Devils@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9195206EBF2A000AFDB1 /* Devils@40px.png */; };
+		DF8C91B5206EBF2D000AFDB1 /* Canucks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9196206EBF2A000AFDB1 /* Canucks@40px.png */; };
+		DF8C91B6206EBF2D000AFDB1 /* Penguins@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9197206EBF2B000AFDB1 /* Penguins@40px.png */; };
+		DF8C91B7206EBF2D000AFDB1 /* Bruins@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */; };
+		DF8C91B8206EBF2D000AFDB1 /* Wings@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C9199206EBF2B000AFDB1 /* Wings@40px.png */; };
+		DF8C91B9206EBF2D000AFDB1 /* Oilers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919A206EBF2B000AFDB1 /* Oilers@40px.png */; };
+		DF8C91BA206EBF2D000AFDB1 /* Lightning@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919B206EBF2B000AFDB1 /* Lightning@40px.png */; };
+		DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919C206EBF2B000AFDB1 /* Coyotes@40px.png */; };
+		DF8C91BC206EBF2D000AFDB1 /* Predators@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919D206EBF2B000AFDB1 /* Predators@40px.png */; };
+		DF8C91BD206EBF2D000AFDB1 /* Sharks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919E206EBF2B000AFDB1 /* Sharks@40px.png */; };
+		DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C919F206EBF2B000AFDB1 /* Canadians@40px.png */; };
+		DF8C91BF206EBF2D000AFDB1 /* Flyers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A0206EBF2B000AFDB1 /* Flyers@40px.png */; };
+		DF8C91C0206EBF2D000AFDB1 /* Leafs@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A1206EBF2C000AFDB1 /* Leafs@40px.png */; };
+		DF8C91C1206EBF2D000AFDB1 /* Flames@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A2206EBF2C000AFDB1 /* Flames@40px.png */; };
+		DF8C91C2206EBF2D000AFDB1 /* Capitals@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A3206EBF2C000AFDB1 /* Capitals@40px.png */; };
+		DF8C91C3206EBF2D000AFDB1 /* Rangers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A4206EBF2C000AFDB1 /* Rangers@40px.png */; };
+		DF8C91C4206EBF2D000AFDB1 /* Wild@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A5206EBF2C000AFDB1 /* Wild@40px.png */; };
+		DF8C91C5206EBF2D000AFDB1 /* Blackhawks@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */; };
+		DF8C91C6206EBF2D000AFDB1 /* Jackets@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A7206EBF2C000AFDB1 /* Jackets@40px.png */; };
+		DF8C91C7206EBF2D000AFDB1 /* Panthers@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91A8206EBF2C000AFDB1 /* Panthers@40px.png */; };
+		DF8C91CA206EBF2D000AFDB1 /* Avalanche@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */; };
+		DF8C91CB206EBF2D000AFDB1 /* Hurricanes@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91AC206EBF2D000AFDB1 /* Hurricanes@40px.png */; };
+		DF8C91CC206EBF2D000AFDB1 /* Islanders@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91AD206EBF2D000AFDB1 /* Islanders@40px.png */; };
+		DF8C91CE206EC497000AFDB1 /* Blues@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91CD206EC496000AFDB1 /* Blues@40px.png */; };
+		DF8C91D0206EC578000AFDB1 /* Jets@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8C91CF206EC578000AFDB1 /* Jets@40px.png */; };
 		DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A1C206457CC000B3074 /* AppDelegate.swift */; };
 		DFB04A22206457CC000B3074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A20206457CC000B3074 /* Main.storyboard */; };
 		DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A23206457CC000B3074 /* Assets.xcassets */; };
@@ -57,6 +119,68 @@
 		DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		DF86BBEC206AE77900F22FB9 /* LiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveController.swift; sourceTree = "<group>"; };
+		DF8C914F206EB272000AFDB1 /* Capitals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Capitals.png; sourceTree = "<group>"; };
+		DF8C9150206EB272000AFDB1 /* Flyers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flyers.png; sourceTree = "<group>"; };
+		DF8C9151206EB272000AFDB1 /* Wild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wild.png; sourceTree = "<group>"; };
+		DF8C9152206EB273000AFDB1 /* Knights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knights.png; sourceTree = "<group>"; };
+		DF8C9153206EB273000AFDB1 /* Leafs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leafs.png; sourceTree = "<group>"; };
+		DF8C9154206EB273000AFDB1 /* Devils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Devils.png; sourceTree = "<group>"; };
+		DF8C9155206EB273000AFDB1 /* Panthers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panthers.png; sourceTree = "<group>"; };
+		DF8C9156206EB273000AFDB1 /* Sabers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sabers.png; sourceTree = "<group>"; };
+		DF8C9157206EB274000AFDB1 /* Canadians.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canadians.png; sourceTree = "<group>"; };
+		DF8C9158206EB274000AFDB1 /* Oilers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oilers.png; sourceTree = "<group>"; };
+		DF8C9159206EB274000AFDB1 /* Coyotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coyotes.png; sourceTree = "<group>"; };
+		DF8C915A206EB274000AFDB1 /* Rangers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rangers.png; sourceTree = "<group>"; };
+		DF8C915B206EB274000AFDB1 /* Kings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kings.png; sourceTree = "<group>"; };
+		DF8C915C206EB275000AFDB1 /* Ducks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Ducks.gif; sourceTree = "<group>"; };
+		DF8C915D206EB275000AFDB1 /* Predators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Predators.png; sourceTree = "<group>"; };
+		DF8C915E206EB275000AFDB1 /* Wings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wings.png; sourceTree = "<group>"; };
+		DF8C915F206EB275000AFDB1 /* Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stars.png; sourceTree = "<group>"; };
+		DF8C9160206EB275000AFDB1 /* Bruins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bruins.png; sourceTree = "<group>"; };
+		DF8C9161206EB275000AFDB1 /* Canucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canucks.png; sourceTree = "<group>"; };
+		DF8C9162206EB276000AFDB1 /* Lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lightning.png; sourceTree = "<group>"; };
+		DF8C9163206EB276000AFDB1 /* Flames.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flames.png; sourceTree = "<group>"; };
+		DF8C9164206EB276000AFDB1 /* Blues.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blues.png; sourceTree = "<group>"; };
+		DF8C9165206EB276000AFDB1 /* Hurricanes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hurricanes.png; sourceTree = "<group>"; };
+		DF8C9166206EB276000AFDB1 /* Blackhawks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blackhawks.png; sourceTree = "<group>"; };
+		DF8C9167206EB277000AFDB1 /* Jets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jets.png; sourceTree = "<group>"; };
+		DF8C9168206EB277000AFDB1 /* Penguins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Penguins.png; sourceTree = "<group>"; };
+		DF8C9169206EB277000AFDB1 /* Senators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Senators.png; sourceTree = "<group>"; };
+		DF8C916A206EB277000AFDB1 /* Islanders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Islanders.png; sourceTree = "<group>"; };
+		DF8C916B206EB278000AFDB1 /* Sharks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sharks.png; sourceTree = "<group>"; };
+		DF8C916C206EB278000AFDB1 /* Avalanche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avalanche.png; sourceTree = "<group>"; };
+		DF8C916D206EB278000AFDB1 /* Jackets.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Jackets.gif; sourceTree = "<group>"; };
+		DF8C918F206EBF2A000AFDB1 /* Ducks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ducks@40px.png"; sourceTree = "<group>"; };
+		DF8C9190206EBF2A000AFDB1 /* Knights@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knights@40px.png"; sourceTree = "<group>"; };
+		DF8C9191206EBF2A000AFDB1 /* Sabers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sabers@40px.png"; sourceTree = "<group>"; };
+		DF8C9192206EBF2A000AFDB1 /* Senators@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Senators@40px.png"; sourceTree = "<group>"; };
+		DF8C9193206EBF2A000AFDB1 /* Kings@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kings@40px.png"; sourceTree = "<group>"; };
+		DF8C9194206EBF2A000AFDB1 /* Stars@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stars@40px.png"; sourceTree = "<group>"; };
+		DF8C9195206EBF2A000AFDB1 /* Devils@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Devils@40px.png"; sourceTree = "<group>"; };
+		DF8C9196206EBF2A000AFDB1 /* Canucks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canucks@40px.png"; sourceTree = "<group>"; };
+		DF8C9197206EBF2B000AFDB1 /* Penguins@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Penguins@40px.png"; sourceTree = "<group>"; };
+		DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bruins@40px.png"; sourceTree = "<group>"; };
+		DF8C9199206EBF2B000AFDB1 /* Wings@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wings@40px.png"; sourceTree = "<group>"; };
+		DF8C919A206EBF2B000AFDB1 /* Oilers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oilers@40px.png"; sourceTree = "<group>"; };
+		DF8C919B206EBF2B000AFDB1 /* Lightning@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lightning@40px.png"; sourceTree = "<group>"; };
+		DF8C919C206EBF2B000AFDB1 /* Coyotes@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coyotes@40px.png"; sourceTree = "<group>"; };
+		DF8C919D206EBF2B000AFDB1 /* Predators@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Predators@40px.png"; sourceTree = "<group>"; };
+		DF8C919E206EBF2B000AFDB1 /* Sharks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sharks@40px.png"; sourceTree = "<group>"; };
+		DF8C919F206EBF2B000AFDB1 /* Canadians@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canadians@40px.png"; sourceTree = "<group>"; };
+		DF8C91A0206EBF2B000AFDB1 /* Flyers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flyers@40px.png"; sourceTree = "<group>"; };
+		DF8C91A1206EBF2C000AFDB1 /* Leafs@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leafs@40px.png"; sourceTree = "<group>"; };
+		DF8C91A2206EBF2C000AFDB1 /* Flames@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flames@40px.png"; sourceTree = "<group>"; };
+		DF8C91A3206EBF2C000AFDB1 /* Capitals@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capitals@40px.png"; sourceTree = "<group>"; };
+		DF8C91A4206EBF2C000AFDB1 /* Rangers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rangers@40px.png"; sourceTree = "<group>"; };
+		DF8C91A5206EBF2C000AFDB1 /* Wild@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wild@40px.png"; sourceTree = "<group>"; };
+		DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blackhawks@40px.png"; sourceTree = "<group>"; };
+		DF8C91A7206EBF2C000AFDB1 /* Jackets@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jackets@40px.png"; sourceTree = "<group>"; };
+		DF8C91A8206EBF2C000AFDB1 /* Panthers@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Panthers@40px.png"; sourceTree = "<group>"; };
+		DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avalanche@40px.png"; sourceTree = "<group>"; };
+		DF8C91AC206EBF2D000AFDB1 /* Hurricanes@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hurricanes@40px.png"; sourceTree = "<group>"; };
+		DF8C91AD206EBF2D000AFDB1 /* Islanders@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Islanders@40px.png"; sourceTree = "<group>"; };
+		DF8C91CD206EC496000AFDB1 /* Blues@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blues@40px.png"; path = "../../../../Pictures/Logos/Blues@40px.png"; sourceTree = "<group>"; };
+		DF8C91CF206EC578000AFDB1 /* Jets@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jets@40px.png"; path = "../../../../Pictures/Logos/Jets@40px.png"; sourceTree = "<group>"; };
 		DFB04A19206457CC000B3074 /* NHLStatTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHLStatTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB04A1C206457CC000B3074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFB04A21206457CC000B3074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +222,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF8C918D206EB36E000AFDB1 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C916C206EB278000AFDB1 /* Avalanche.png */,
+				DF8C9166206EB276000AFDB1 /* Blackhawks.png */,
+				DF8C9164206EB276000AFDB1 /* Blues.png */,
+				DF8C9160206EB275000AFDB1 /* Bruins.png */,
+				DF8C9157206EB274000AFDB1 /* Canadians.png */,
+				DF8C9161206EB275000AFDB1 /* Canucks.png */,
+				DF8C914F206EB272000AFDB1 /* Capitals.png */,
+				DF8C9159206EB274000AFDB1 /* Coyotes.png */,
+				DF8C9154206EB273000AFDB1 /* Devils.png */,
+				DF8C915C206EB275000AFDB1 /* Ducks.gif */,
+				DF8C9163206EB276000AFDB1 /* Flames.png */,
+				DF8C9150206EB272000AFDB1 /* Flyers.png */,
+				DF8C9165206EB276000AFDB1 /* Hurricanes.png */,
+				DF8C916A206EB277000AFDB1 /* Islanders.png */,
+				DF8C916D206EB278000AFDB1 /* Jackets.gif */,
+				DF8C9167206EB277000AFDB1 /* Jets.png */,
+				DF8C915B206EB274000AFDB1 /* Kings.png */,
+				DF8C9152206EB273000AFDB1 /* Knights.png */,
+				DF8C9153206EB273000AFDB1 /* Leafs.png */,
+				DF8C9162206EB276000AFDB1 /* Lightning.png */,
+				DF8C9158206EB274000AFDB1 /* Oilers.png */,
+				DF8C9155206EB273000AFDB1 /* Panthers.png */,
+				DF8C9168206EB277000AFDB1 /* Penguins.png */,
+				DF8C915D206EB275000AFDB1 /* Predators.png */,
+				DF8C915A206EB274000AFDB1 /* Rangers.png */,
+				DF8C9156206EB273000AFDB1 /* Sabers.png */,
+				DF8C9169206EB277000AFDB1 /* Senators.png */,
+				DF8C916B206EB278000AFDB1 /* Sharks.png */,
+				DF8C915F206EB275000AFDB1 /* Stars.png */,
+				DF8C9151206EB272000AFDB1 /* Wild.png */,
+				DF8C915E206EB275000AFDB1 /* Wings.png */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		DF8C918E206EBF04000AFDB1 /* Teams@40px */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C91CD206EC496000AFDB1 /* Blues@40px.png */,
+				DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */,
+				DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */,
+				DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */,
+				DF8C919F206EBF2B000AFDB1 /* Canadians@40px.png */,
+				DF8C9196206EBF2A000AFDB1 /* Canucks@40px.png */,
+				DF8C91A3206EBF2C000AFDB1 /* Capitals@40px.png */,
+				DF8C919C206EBF2B000AFDB1 /* Coyotes@40px.png */,
+				DF8C9195206EBF2A000AFDB1 /* Devils@40px.png */,
+				DF8C918F206EBF2A000AFDB1 /* Ducks@40px.png */,
+				DF8C91A2206EBF2C000AFDB1 /* Flames@40px.png */,
+				DF8C91A0206EBF2B000AFDB1 /* Flyers@40px.png */,
+				DF8C91AC206EBF2D000AFDB1 /* Hurricanes@40px.png */,
+				DF8C91AD206EBF2D000AFDB1 /* Islanders@40px.png */,
+				DF8C91CF206EC578000AFDB1 /* Jets@40px.png */,
+				DF8C91A7206EBF2C000AFDB1 /* Jackets@40px.png */,
+				DF8C9193206EBF2A000AFDB1 /* Kings@40px.png */,
+				DF8C9190206EBF2A000AFDB1 /* Knights@40px.png */,
+				DF8C91A1206EBF2C000AFDB1 /* Leafs@40px.png */,
+				DF8C919B206EBF2B000AFDB1 /* Lightning@40px.png */,
+				DF8C919A206EBF2B000AFDB1 /* Oilers@40px.png */,
+				DF8C91A8206EBF2C000AFDB1 /* Panthers@40px.png */,
+				DF8C9197206EBF2B000AFDB1 /* Penguins@40px.png */,
+				DF8C919D206EBF2B000AFDB1 /* Predators@40px.png */,
+				DF8C91A4206EBF2C000AFDB1 /* Rangers@40px.png */,
+				DF8C9191206EBF2A000AFDB1 /* Sabers@40px.png */,
+				DF8C9192206EBF2A000AFDB1 /* Senators@40px.png */,
+				DF8C919E206EBF2B000AFDB1 /* Sharks@40px.png */,
+				DF8C9194206EBF2A000AFDB1 /* Stars@40px.png */,
+				DF8C91A5206EBF2C000AFDB1 /* Wild@40px.png */,
+				DF8C9199206EBF2B000AFDB1 /* Wings@40px.png */,
+			);
+			path = "Teams@40px";
+			sourceTree = "<group>";
+		};
 		DFB04A10206457CC000B3074 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +360,8 @@
 		DFB04A4C206473D2000B3074 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DF8C918E206EBF04000AFDB1 /* Teams@40px */,
+				DF8C918D206EB36E000AFDB1 /* Teams */,
 				DF30F89E2069686A0047B97C /* calendar.png */,
 				DF30F8A02069686B0047B97C /* cup.png */,
 				DF30F8A12069686B0047B97C /* jersey.png */,
@@ -278,14 +480,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8C91B6206EBF2D000AFDB1 /* Penguins@40px.png in Resources */,
+				DF8C9179206EB278000AFDB1 /* Rangers.png in Resources */,
+				DF8C91AF206EBF2D000AFDB1 /* Knights@40px.png in Resources */,
 				DF30F8A32069686B0047B97C /* live.png in Resources */,
 				DFB04A27206457CC000B3074 /* LaunchScreen.storyboard in Resources */,
+				DF8C91C4206EBF2D000AFDB1 /* Wild@40px.png in Resources */,
 				DF30F8A42069686B0047B97C /* cup.png in Resources */,
+				DF8C91CC206EBF2D000AFDB1 /* Islanders@40px.png in Resources */,
+				DF8C9183206EB278000AFDB1 /* Blues.png in Resources */,
+				DF8C917C206EB278000AFDB1 /* Predators.png in Resources */,
+				DF8C9189206EB278000AFDB1 /* Islanders.png in Resources */,
+				DF8C9170206EB278000AFDB1 /* Wild.png in Resources */,
+				DF8C9174206EB278000AFDB1 /* Panthers.png in Resources */,
 				DF30F8A22069686B0047B97C /* calendar.png in Resources */,
+				DF8C91C5206EBF2D000AFDB1 /* Blackhawks@40px.png in Resources */,
+				DF8C91B9206EBF2D000AFDB1 /* Oilers@40px.png in Resources */,
+				DF8C916F206EB278000AFDB1 /* Flyers.png in Resources */,
 				DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */,
+				DF8C918B206EB278000AFDB1 /* Avalanche.png in Resources */,
+				DF8C91B0206EBF2D000AFDB1 /* Sabers@40px.png in Resources */,
+				DF8C9178206EB278000AFDB1 /* Coyotes.png in Resources */,
+				DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */,
+				DF8C9185206EB278000AFDB1 /* Blackhawks.png in Resources */,
+				DF8C91CE206EC497000AFDB1 /* Blues@40px.png in Resources */,
+				DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */,
+				DF8C9181206EB278000AFDB1 /* Lightning.png in Resources */,
+				DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */,
+				DF8C91BF206EBF2D000AFDB1 /* Flyers@40px.png in Resources */,
+				DF8C917E206EB278000AFDB1 /* Stars.png in Resources */,
+				DF8C91D0206EC578000AFDB1 /* Jets@40px.png in Resources */,
+				DF8C9172206EB278000AFDB1 /* Leafs.png in Resources */,
+				DF8C9171206EB278000AFDB1 /* Knights.png in Resources */,
+				DF8C9175206EB278000AFDB1 /* Sabers.png in Resources */,
 				DFB04A50206473E7000B3074 /* Nav.png in Resources */,
+				DF8C91B1206EBF2D000AFDB1 /* Senators@40px.png in Resources */,
+				DF8C916E206EB278000AFDB1 /* Capitals.png in Resources */,
+				DF8C91B8206EBF2D000AFDB1 /* Wings@40px.png in Resources */,
+				DF8C9187206EB278000AFDB1 /* Penguins.png in Resources */,
+				DF8C91C7206EBF2D000AFDB1 /* Panthers@40px.png in Resources */,
+				DF8C9173206EB278000AFDB1 /* Devils.png in Resources */,
+				DF8C91C0206EBF2D000AFDB1 /* Leafs@40px.png in Resources */,
+				DF8C917A206EB278000AFDB1 /* Kings.png in Resources */,
+				DF8C9184206EB278000AFDB1 /* Hurricanes.png in Resources */,
+				DF8C9176206EB278000AFDB1 /* Canadians.png in Resources */,
+				DF8C917D206EB278000AFDB1 /* Wings.png in Resources */,
+				DF8C91B4206EBF2D000AFDB1 /* Devils@40px.png in Resources */,
+				DF8C918C206EB278000AFDB1 /* Jackets.gif in Resources */,
+				DF8C91C2206EBF2D000AFDB1 /* Capitals@40px.png in Resources */,
+				DF8C91AE206EBF2D000AFDB1 /* Ducks@40px.png in Resources */,
+				DF8C91C1206EBF2D000AFDB1 /* Flames@40px.png in Resources */,
+				DF8C9177206EB278000AFDB1 /* Oilers.png in Resources */,
 				DFB04A22206457CC000B3074 /* Main.storyboard in Resources */,
+				DF8C917B206EB278000AFDB1 /* Ducks.gif in Resources */,
+				DF8C91BD206EBF2D000AFDB1 /* Sharks@40px.png in Resources */,
+				DF8C91B7206EBF2D000AFDB1 /* Bruins@40px.png in Resources */,
+				DF8C917F206EB278000AFDB1 /* Bruins.png in Resources */,
+				DF8C91B5206EBF2D000AFDB1 /* Canucks@40px.png in Resources */,
+				DF8C91CB206EBF2D000AFDB1 /* Hurricanes@40px.png in Resources */,
+				DF8C9186206EB278000AFDB1 /* Jets.png in Resources */,
 				DFB04A4E206473E1000B3074 /* Stat.png in Resources */,
+				DF8C918A206EB278000AFDB1 /* Sharks.png in Resources */,
+				DF8C91C6206EBF2D000AFDB1 /* Jackets@40px.png in Resources */,
+				DF8C9182206EB278000AFDB1 /* Flames.png in Resources */,
+				DF8C9180206EB278000AFDB1 /* Canucks.png in Resources */,
+				DF8C91BA206EBF2D000AFDB1 /* Lightning@40px.png in Resources */,
+				DF8C91BC206EBF2D000AFDB1 /* Predators@40px.png in Resources */,
+				DF8C91B2206EBF2D000AFDB1 /* Kings@40px.png in Resources */,
+				DF8C91C3206EBF2D000AFDB1 /* Rangers@40px.png in Resources */,
+				DF8C91CA206EBF2D000AFDB1 /* Avalanche@40px.png in Resources */,
+				DF8C9188206EB278000AFDB1 /* Senators.png in Resources */,
 				DF30F8A52069686B0047B97C /* jersey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TeamController: UIViewController {
+class TeamController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
