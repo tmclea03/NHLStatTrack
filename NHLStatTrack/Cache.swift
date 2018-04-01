@@ -15,6 +15,8 @@ class Cache {
     let tableName = "cachedEndpoints"
     
     
+    private var endpointUpdateRecord = [String: Date]()
+    
     // Create SQLITE Database File.
     let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("CachedEndpoints.sqlite")
     
@@ -62,28 +64,47 @@ class Cache {
             return
         }
         
+        endpointUpdateRecord[endpoint] = Date()
+        
         print("Endpoint added successfully.")
     }
     
-    func pullEndpoint(endpointToPull: String) {
-        let queryString = "SELECT * FROM \(tableName) WHERE endpoint LIKE '" + endpointToPull + "\'"
+    private func _pullEndpoint(url: String) -> OpaquePointer? {
+        let queryString = "SELECT * FROM \(tableName) WHERE endpoint LIKE '" + url + "\'"
         var stmt: OpaquePointer?
         
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("Error preparing read select: \(errmsg)")
-            return
+            return nil
         }
         
         while(sqlite3_step(stmt) == SQLITE_ROW) {
-            let id = sqlite3_column_int(stmt, 0)
-            let endpoint = String(cString: sqlite3_column_text(stmt, 1))
-            let data = String(cString: sqlite3_column_text(stmt, 2))
-            
-            print(id)
-            print(endpoint)
-            print(data)
+            return (stmt)
         }
+        
+        return nil
+    }
+    
+    func pullEndpoint(endpointToPull: String) -> String {
+        let stmt = _pullEndpoint(url: endpointToPull)
+        if stmt == nil {
+            print("No matching endpoints could be found!")
+            return ""
+        }
+        //let id = sqlite3_column_int(stmt, 0)
+        let endpoint = String(cString: sqlite3_column_text(stmt, 1))
+        print(endpoint)
+        let data = String(cString: sqlite3_column_text(stmt, 2))
+        return data
+        
+    }
+    
+    func endpointExists(endpointToCheck: String) -> Bool {
+        if _pullEndpoint(url: endpointToCheck) != nil {
+            return true
+        }
+        return false
     }
     
     // Deletes table and resets the sqlite_sequence.
@@ -122,5 +143,13 @@ class Cache {
         }
         
         print("Table purged.")
+    }
+    
+    func endpointLastUpdated(endpointToCheck: String) -> Date? {
+        let data = endpointUpdateRecord[endpointToCheck]
+        if data != nil {
+            return data
+        }
+        return nil
     }
 }
