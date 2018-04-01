@@ -17,18 +17,11 @@ class TeamController: UITableViewController {
         createMenus()
         customizeBar()
         //-------------------------------------------------------------------------------------------
-        let test = APIRequest()
-        test.makeRequest(targetURL:"http://httpbin.org/get") { success in
-            if success {
-                print(test.content)
-            }
-        }
         
-        let db = Cache()
-        db.purge()
-        db.addEndpoint(endpoint: "/api/get", data: "And this is my data.")
-        db.pullEndpoint(endpointToPull: "/api/get")
+        let stash = Stash().getInstance()
+        //stash.db.purge()
         
+        print(stash.pullFromStash(url: "http://httpbin.org/get"))
         
         //-------------------------------------------------------------------------------------------
         
