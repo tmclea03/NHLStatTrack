@@ -9,7 +9,11 @@
 import UIKit
 
 class TeamStatController: UIViewController {
-
+    @IBOutlet weak var winLabel: UILabel!
+    @IBOutlet weak var lossLabel: UILabel!
+    @IBOutlet weak var otLossLabel: UILabel!
+    @IBOutlet weak var pointsLabel: UILabel!
+    
     var teamName = String("")
     
     override func viewDidLoad() {
