@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37D0697A20706BD400CD4038 /* Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0697920706BD400CD4038 /* Stash.swift */; };
 		DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */; };
 		DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */; };
 		DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78BC206AC46500FC9B86 /* StandingController.swift */; };
@@ -50,6 +49,7 @@
 		DF7E3CB320717E3A00AD4CB7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB220717E3A00AD4CB7 /* Player.swift */; };
 		DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB42071868600AD4CB7 /* Team.swift */; };
 		DF7E3CB72071918400AD4CB7 /* TeamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */; };
+		DF7E3CBE2071A4F000AD4CB7 /* Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */; };
 		DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE6206AD75200F22FB9 /* TeamController.swift */; };
 		DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */; };
 		DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */; };
@@ -158,6 +158,7 @@
 		DF7E3CB220717E3A00AD4CB7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		DF7E3CB42071868600AD4CB7 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewCell.swift; sourceTree = "<group>"; };
+		DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stash.swift; sourceTree = "<group>"; };
 		DF86BBE6206AD75200F22FB9 /* TeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
 		DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
@@ -272,6 +273,14 @@
 			path = "Teams@128px";
 			sourceTree = "<group>";
 		};
+		DF7E3CB82071A45600AD4CB7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				37D0697920706BD400CD4038 /* Stash.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		DF8C918E206EBF04000AFDB1 /* Teams@40px */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +325,7 @@
 				DFB04A30206457CC000B3074 /* NHLStatTrackTests */,
 				DFB04A3B206457CC000B3074 /* NHLStatTrackUITests */,
 				DFB04A1A206457CC000B3074 /* Products */,
+				DF7E3CB82071A45600AD4CB7 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,6 +360,7 @@
 				DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */,
 				DF7E3CB020717E2E00AD4CB7 /* PlayerViewCell.swift */,
 				DF7E3CB220717E3A00AD4CB7 /* Player.swift */,
+				DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */,
 				DF7E3CB42071868600AD4CB7 /* Team.swift */,
 				DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */,
 			);
@@ -590,7 +601,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37D0697A20706BD400CD4038 /* Stash.swift in Sources */,
 				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
 				DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */,
 				DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */,
@@ -599,6 +609,7 @@
 				DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */,
 				DF7E3CB320717E3A00AD4CB7 /* Player.swift in Sources */,
 				DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */,
+				DF7E3CBE2071A4F000AD4CB7 /* Stash.swift in Sources */,
 				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,
 				DF7E3CB120717E2E00AD4CB7 /* PlayerViewCell.swift in Sources */,
 				DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */,

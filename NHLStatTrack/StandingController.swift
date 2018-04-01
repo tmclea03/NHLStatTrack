@@ -118,7 +118,6 @@ class StandingController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: CellID.TeamViewCell, for: indexPath) as! TeamViewCell
         if (indexPath.row < teams[indexPath.section].count) {
             cell.configureForTeam(teams[indexPath.section][indexPath.row])
-            print("Section: \(indexPath.section) Row: \(indexPath.row) Name: \(cell.teamName)")
         }
         return cell
     }
