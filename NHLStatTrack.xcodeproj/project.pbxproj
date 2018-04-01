@@ -576,6 +576,7 @@
 				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
 				37EE86072070268E009E9D67 /* Cache.swift in Sources */,
 				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
+				DF071E4B2070456C00A0A8B3 /* TeamStatController.swift in Sources */,
 				DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */,
 				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,
 				DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */,
