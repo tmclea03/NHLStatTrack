@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF071E482070253600A0A8B3 /* Jets@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF071E462070253600A0A8B3 /* Jets@40px.png */; };
-		DF071E492070253600A0A8B3 /* Blues@40px.png in Resources */ = {isa = PBXBuildFile; fileRef = DF071E472070253600A0A8B3 /* Blues@40px.png */; };
 		DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */; };
 		DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */; };
 		DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78BC206AC46500FC9B86 /* StandingController.swift */; };
@@ -57,6 +55,8 @@
 		DFB04A3D206457CC000B3074 /* NHLStatTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB04A3C206457CC000B3074 /* NHLStatTrackUITests.swift */; };
 		DFB04A4E206473E1000B3074 /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A4D206473E1000B3074 /* Stat.png */; };
 		DFB04A50206473E7000B3074 /* Nav.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB04A4F206473E7000B3074 /* Nav.png */; };
+		DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA74E920706A300026BBF4 /* Cache.swift */; };
+		DFBA74EC20706A310026BBF4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA74EA20706A310026BBF4 /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +77,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF071E462070253600A0A8B3 /* Jets@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jets@40px.png"; path = "../../../../Pictures/Logos/Jets@40px.png"; sourceTree = "<group>"; };
-		DF071E472070253600A0A8B3 /* Blues@40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blues@40px.png"; path = "../../../../Pictures/Logos/Blues@40px.png"; sourceTree = "<group>"; };
 		DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatController.swift; sourceTree = "<group>"; };
 		DF0C78B6206AC1B100FC9B86 /* NHLStatTrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NHLStatTrack-Bridging-Header.h"; sourceTree = "<group>"; };
 		DF0C78B7206AC1B200FC9B86 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -135,6 +133,8 @@
 		DFB04A3E206457CC000B3074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFB04A4D206473E1000B3074 /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stat.png; sourceTree = "<group>"; };
 		DFB04A4F206473E7000B3074 /* Nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav.png; sourceTree = "<group>"; };
+		DFBA74E920706A300026BBF4 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		DFBA74EA20706A310026BBF4 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +236,8 @@
 				DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */,
 				DFB04A20206457CC000B3074 /* Main.storyboard */,
 				DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */,
+				DFBA74EA20706A310026BBF4 /* APIRequest.swift */,
+				DFBA74E920706A300026BBF4 /* Cache.swift */,
 				DFB04A1C206457CC000B3074 /* AppDelegate.swift */,
 				DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */,
 				DF0C78BC206AC46500FC9B86 /* StandingController.swift */,
@@ -401,7 +403,6 @@
 				DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */,
 				DF8C91B0206EBF2D000AFDB1 /* Sabers@40px.png in Resources */,
 				DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */,
-				DF8C9185206EB278000AFDB1 /* Blackhawks.png in Resources */,
 				DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */,
 				DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */,
 				DF8C91BF206EBF2D000AFDB1 /* Flyers@40px.png in Resources */,
@@ -452,14 +453,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
-				37EE86072070268E009E9D67 /* Cache.swift in Sources */,
+				DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */,
 				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
 				DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */,
 				DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */,
 				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,
 				DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */,
 				DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */,
-				37EE85FD206EC3BC009E9D67 /* APIRequest.swift in Sources */,
+				DFBA74EC20706A310026BBF4 /* APIRequest.swift in Sources */,
 				DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
