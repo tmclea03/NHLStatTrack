@@ -172,8 +172,6 @@
 		DF8C918E206EBF04000AFDB1 /* Teams@40px */ = {
 			isa = PBXGroup;
 			children = (
-				DF071E472070253600A0A8B3 /* Blues@40px.png */,
-				DF071E462070253600A0A8B3 /* Jets@40px.png */,
 				DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */,
 				DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */,
 				DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */,
@@ -390,7 +388,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF071E482070253600A0A8B3 /* Jets@40px.png in Resources */,
 				DF8C91B6206EBF2D000AFDB1 /* Penguins@40px.png in Resources */,
 				DF8C91AF206EBF2D000AFDB1 /* Knights@40px.png in Resources */,
 				DF30F8A32069686B0047B97C /* live.png in Resources */,
@@ -404,7 +401,7 @@
 				DFB04A24206457CC000B3074 /* Assets.xcassets in Resources */,
 				DF8C91B0206EBF2D000AFDB1 /* Sabers@40px.png in Resources */,
 				DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */,
-				DF071E492070253600A0A8B3 /* Blues@40px.png in Resources */,
+				DF8C9185206EB278000AFDB1 /* Blackhawks.png in Resources */,
 				DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */,
 				DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */,
 				DF8C91BF206EBF2D000AFDB1 /* Flyers@40px.png in Resources */,
@@ -455,12 +452,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
+				37EE86072070268E009E9D67 /* Cache.swift in Sources */,
 				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
 				DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */,
 				DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */,
 				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,
 				DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */,
 				DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */,
+				37EE85FD206EC3BC009E9D67 /* APIRequest.swift in Sources */,
 				DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
