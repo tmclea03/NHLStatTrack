@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37EE85FD206EC3BC009E9D67 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE85FC206EC3BC009E9D67 /* APIRequest.swift */; };
+		37EE86072070268E009E9D67 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE86062070268E009E9D67 /* Cache.swift */; };
 		DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */; };
 		DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78BC206AC46500FC9B86 /* StandingController.swift */; };
 		DF30F8A22069686B0047B97C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = DF30F89E2069686A0047B97C /* calendar.png */; };
@@ -107,6 +108,7 @@
 
 /* Begin PBXFileReference section */
 		37EE85FC206EC3BC009E9D67 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		37EE86062070268E009E9D67 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		DF0C78B6206AC1B100FC9B86 /* NHLStatTrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NHLStatTrack-Bridging-Header.h"; sourceTree = "<group>"; };
 		DF0C78B7206AC1B200FC9B86 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -261,8 +263,6 @@
 		DF8C918E206EBF04000AFDB1 /* Teams@40px */ = {
 			isa = PBXGroup;
 			children = (
-				DF071E472070253600A0A8B3 /* Blues@40px.png */,
-				DF071E462070253600A0A8B3 /* Jets@40px.png */,
 				DF8C91AB206EBF2C000AFDB1 /* Avalanche@40px.png */,
 				DF8C91A6206EBF2C000AFDB1 /* Blackhawks@40px.png */,
 				DF8C9198206EBF2B000AFDB1 /* Bruins@40px.png */,
@@ -334,6 +334,7 @@
 				DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */,
 				DF86BBEC206AE77900F22FB9 /* LiveController.swift */,
 				37EE85FC206EC3BC009E9D67 /* APIRequest.swift */,
+				37EE86062070268E009E9D67 /* Cache.swift */,
 			);
 			path = NHLStatTrack;
 			sourceTree = "<group>";
@@ -479,7 +480,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF071E482070253600A0A8B3 /* Jets@40px.png in Resources */,
 				DF8C91B6206EBF2D000AFDB1 /* Penguins@40px.png in Resources */,
 				DF8C9179206EB278000AFDB1 /* Rangers.png in Resources */,
 				DF8C91AF206EBF2D000AFDB1 /* Knights@40px.png in Resources */,
@@ -503,7 +503,6 @@
 				DF8C9178206EB278000AFDB1 /* Coyotes.png in Resources */,
 				DF8C91BE206EBF2D000AFDB1 /* Canadians@40px.png in Resources */,
 				DF8C9185206EB278000AFDB1 /* Blackhawks.png in Resources */,
-				DF071E492070253600A0A8B3 /* Blues@40px.png in Resources */,
 				DF8C91BB206EBF2D000AFDB1 /* Coyotes@40px.png in Resources */,
 				DF8C9181206EB278000AFDB1 /* Lightning.png in Resources */,
 				DF8C91B3206EBF2D000AFDB1 /* Stars@40px.png in Resources */,
@@ -575,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
+				37EE86072070268E009E9D67 /* Cache.swift in Sources */,
 				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
 				DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */,
 				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,

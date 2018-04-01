@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SQLite3
 
 class TeamController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -24,7 +23,11 @@ class TeamController: UITableViewController {
                 print(test.content)
             }
         }
-        print("After")
+        
+        let db = Cache()
+        db.purge()
+        db.addEndpoint(endpoint: "/api/get", data: "And this is my data.")
+        db.pullEndpoint(endpointToPull: "/api/get")
         
         
         //-------------------------------------------------------------------------------------------
