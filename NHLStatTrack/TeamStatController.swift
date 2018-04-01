@@ -13,14 +13,149 @@ class TeamStatController: UIViewController {
     @IBOutlet weak var lossLabel: UILabel!
     @IBOutlet weak var otLossLabel: UILabel!
     @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet weak var teamImage: UIImageView!
+    @IBOutlet weak var playerList: UITableView!
     
     var teamName = String("")
+    var players:Array<Player>!
+    
+    enum CellID {
+        static let PlayerViewCell = "PlayerCell"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.playerList.delegate = self
+        self.playerList.dataSource = self
+        
+        players = Array<Player>()
+        
         self.title = teamName
-        // Do any additional setup after loading the view.
+        
+        var image:UIImage
+        
+        image = UIImage()
+        
+        print("Team name: \(teamName)")
+        
+        if (teamName == "Ducks") {
+            image = UIImage(named: "Ducks@128px")!
+        }
+        if (teamName == "Coyotes") {
+            image = UIImage(named: "Coyotes@128px")!
+        }
+        if (teamName == "Bruins") {
+           image = UIImage(named: "Bruins@128px")!
+        }
+        if (teamName == "Sabres") {
+            image = UIImage(named: "Sabers@128px")!
+        }
+        if (teamName == "Flames") {
+           image = UIImage(named: "Flames@128px")!
+        }
+        if (teamName == "Hurricanes") {
+            image = UIImage(named: "Hurricanes@128px")!
+        }
+        if (teamName == "Blackhawks") {
+            image = UIImage(named: "Blackhawks@128px")!
+        }
+        if (teamName == "Avalanche") {
+            image = UIImage(named: "Avalanche@128px")!
+        }
+        if (teamName == "Blue Jackets") {
+            image = UIImage(named: "Jackets@128px")!
+        }
+        if (teamName == "Stars") {
+            image = UIImage(named: "Stars@128px")!
+        }
+        if (teamName == "Red Wings") {
+            image = UIImage(named: "Wings@128px")!
+        }
+        if (teamName == "Oilers") {
+            image = UIImage(named: "Oilers@128px")!
+        }
+        if (teamName == "Panthers") {
+            image = UIImage(named: "Panthers@128px")!
+        }
+        if (teamName == "Kings") {
+            image = UIImage(named: "Kings@128px")!
+        }
+        if (teamName == "Wild") {
+            image = UIImage(named: "Wild@128px")!
+        }
+        if (teamName == "Canadians") {
+            image = UIImage(named: "Canadians@128px")!
+        }
+        if (teamName == "Predators") {
+            image = UIImage(named: "Predators@128px")!
+        }
+        if (teamName == "Devils") {
+            image = UIImage(named: "Devils@128px")!
+        }
+        if (teamName == "Islanders") {
+            image = UIImage(named: "Islanders@128px")!
+        }
+        if (teamName == "Rangers") {
+           image = UIImage(named: "Rangers@128px")!
+        }
+        if (teamName == "Senators") {
+            image = UIImage(named: "Senators@128px")!
+        }
+        if (teamName == "Flyers") {
+            image = UIImage(named: "Flyers@128px")!
+        }
+        if (teamName == "Penguins") {
+            image = UIImage(named: "Penguins@128px")!
+        }
+        if (teamName == "Sharks") {
+            image = UIImage(named: "Sharks@128px")!
+        }
+        if (teamName == "Blues") {
+            image = UIImage(named: "Blues@128px")!
+        }
+        if (teamName == "Lightning") {
+            image = UIImage(named: "Lightning@128px")!
+        }
+        if (teamName == "Maple Leafs") {
+            image = UIImage(named: "Leafs@128px")!
+        }
+        if (teamName == "Canucks") {
+            image = UIImage(named: "Canucks@128px")!
+        }
+        if (teamName == "Golden Knights") {
+            image = UIImage(named: "Knights@128px")!
+        }
+        if (teamName == "Capitals") {
+            image = UIImage(named: "Capitals@128px")!
+        }
+        if (teamName == "Jets") {
+            image = UIImage(named: "Jets@128px")!
+        }
+        
+        if image.size.width > image.size.height {
+            teamImage.contentMode = UIViewContentMode.scaleAspectFit
+        } else {
+            teamImage.contentMode = UIViewContentMode.scaleAspectFill
+        }
+        
+        teamImage.image = image
+        
+        teamImage.setNeedsDisplay()
+        
+        let ovi = Player(name: "Steve Konowalchuck", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
+        let marner = Player(name: "Mitchell Marner", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
+        let matthews = Player(name: "Auston Matthews", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
+        let sharpe = Player(name: "Gregor Sharpe", gp: 1, goals: 0, assists: 0, points: 0, plusMinus: 0, pim: 10)
+        let mclean = Player(name: "Tyler McLean", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
+        
+        players.append(ovi)
+        players.append(marner)
+        players.append(matthews)
+        players.append(sharpe)
+        players.append(mclean)
+        
+        playerList.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,5 +174,25 @@ class TeamStatController: UIViewController {
      }
      */
     
+}
+
+// MARK: Table View Data Source
+extension TeamStatController:UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return players.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = playerList.dequeueReusableCell(withIdentifier: CellID.PlayerViewCell, for: indexPath) as! PlayerViewCell
+        cell.configureForPlayer(players[indexPath.row])
+        return cell
+    }
+    
+    
+}
+
+extension TeamStatController:UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
 }
 

@@ -8,45 +8,50 @@
 
 import UIKit
 
-class StandingController: UIViewController {
+class StandingController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet weak var atlanticTeams: UITextView!
-    @IBOutlet weak var metroTeams: UITextView!
-    @IBOutlet weak var centralTeams: UITextView!
-    @IBOutlet weak var pacificTeams: UITextView!
+    var teams:Array<Array<Team>>!
     
-    @IBOutlet weak var atlanticGP: UITextView!
-    @IBOutlet weak var atlanticW: UITextView!
-    @IBOutlet weak var atlanticL: UITextView!
-    @IBOutlet weak var atlanticOT: UITextView!
-    @IBOutlet weak var atlanticPTS: UITextView!
-    
-    @IBOutlet weak var metroGP: UITextView!
-    @IBOutlet weak var metroW: UITextView!
-    @IBOutlet weak var metroL: UITextView!
-    @IBOutlet weak var metroOT: UITextView!
-    @IBOutlet weak var metroPTS: UITextView!
-    
-    @IBOutlet weak var centralGP: UITextView!
-    @IBOutlet weak var centralW: UITextView!
-    @IBOutlet weak var centralL: UITextView!
-    @IBOutlet weak var centralOT: UITextView!
-    @IBOutlet weak var centralPTS: UITextView!
-    
-    @IBOutlet weak var pacificGP: UITextView!
-    @IBOutlet weak var pacificW: UITextView!
-    @IBOutlet weak var pacificL: UITextView!
-    @IBOutlet weak var pacificOT: UITextView!
-    @IBOutlet weak var pacificPTS: UITextView!
+    enum CellID {
+        static let TeamViewCell = "TeamCell"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        teams = Array<Array<Team>>()
+        
+        var atlantic = Array<Team>()
+        var metro = Array<Team>()
+        var central = Array<Team>()
+        var pacific = Array<Team>()
+        
+        var team1 = Team(name: "Lightning", gp: 78, win: 49, loss: 17, otLoss: 12, pts: 110)
+        var team2 = Team(name: "Bruins", gp: 78, win: 52, loss: 22, otLoss: 4, pts: 108)
+        
+        atlantic.append(team1)
+        atlantic.append(team1)
+        atlantic.append(team1)
+        atlantic.append(team1)
+        atlantic.append(team1)
+        atlantic.append(team1)
+        atlantic.append(team1)
+        atlantic.append(team1)
+        metro.append(team1)
+        central.append(team1)
+        pacific.append(team1)
+        
+        teams.append(atlantic)
+        teams.append(metro)
+        teams.append(central)
+        teams.append(pacific)
+        
         createMenus()
         customizeBar()
         populateStandings()
         
+        self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
 
@@ -87,19 +92,50 @@ class StandingController: UIViewController {
     }
     
     func populateStandings() {
-        atlanticTeams.text = "    Lightning\n\n"
-        atlanticTeams.text.append("    Bruins\n\n");
-        atlanticTeams.text.append("    Maple Leafs\n\n");
-        atlanticTeams.text.append("    Panthers\n\n");
-        atlanticTeams.text.append("    Red Wings\n\n");
-        atlanticTeams.text.append("    Canadians\n\n");
-        atlanticTeams.text.append("    Senators\n\n");
-        atlanticTeams.text.append("    Sabers\n\n");
-        atlanticGP.text = "78\n\n76\n\n78\n\n76\n\n78\n\n77\n\n77\n\n77"
-        atlanticW.text = "52\n\n48\n\n47\n\n39\n\n29\n\n28\n\n27\n\n24"
-        atlanticL.text = "22\n\n17\n\n24\n\n29\n\n38\n\n37\n\n39\n\n41"
-        atlanticOT.text = "4\n\n11\n\n7\n\n8\n\n11\n\n12\n\n11\n\n12"
-        atlanticPTS.text = "108\n\n107\n\n101\n\n86\n\n69\n\n68\n\n65\n\n60"
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return 8
+        case 1:
+            return 8
+        case 2:
+            return 7
+        case 3:
+            return 8
+        default:
+            return 0
+        }
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: CellID.TeamViewCell, for: indexPath) as! TeamViewCell
+        if (indexPath.row < teams[indexPath.section].count) {
+            cell.configureForTeam(teams[indexPath.section][indexPath.row])
+            print("Section: \(indexPath.section) Row: \(indexPath.row) Name: \(cell.teamName)")
+        }
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Atlantic                                 GP   W   L   OTL PTS"
+        case 1:
+            return "Metropolitan                       GP   W   L   OTL PTS"
+        case 2:
+            return "Central                                  GP   W   L   OTL PTS"
+        case 3:
+            return "Pacific                                   GP   W   L   OTL PTS"
+        default:
+            return ""
+        }
     }
     
     /*
