@@ -47,6 +47,8 @@ class Stash {
                 let handler = APIRequest()
                 handler.makeRequest(targetURL: url) { success in
                     if success {
+                        self.db.removeEndpoint(toRemove: url)
+                        print("Removed previous entry for endpoint.")
                         self.db.addEndpoint(endpoint:url, data: handler.content)
                     }
                 }

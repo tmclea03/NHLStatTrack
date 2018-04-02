@@ -105,10 +105,8 @@ class Cache {
         //let id = sqlite3_column_int(stmt, 0)
         //let endpoint = String(cString: sqlite3_column_text(stmt, 1))
         
-        let encodedData = String(cString: sqlite3_column_text(stmt, 2))
+        //let encodedData = String(cString: sqlite3_column_text(stmt, 2))
         return backendUpdates[endpointToPull]!
-        
-        return encodedData
         
     }
     
@@ -156,6 +154,25 @@ class Cache {
         }
         
         print("Table purged.")
+    }
+    
+    func removeEndpoint(toRemove: String) {
+        var stmt: OpaquePointer?
+        var queryString = "DELETE FROM \(tableName) WHERE endpoint LIKE '" + toRemove + "\'"
+        
+        // Create query
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("Error preparing delete: \(errmsg)")
+            return
+        }
+        
+        // Execute delete
+        if sqlite3_step(stmt) != SQLITE_DONE {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("Failure purging table: \(errmsg)")
+            return
+        }
     }
     
     // Utilizes 'endpointUpdateRecord' to determine the Date object associated with the endpoint's last update.
