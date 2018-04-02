@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let stash = Stash()
-        print(stash.pullFromStash(url: "http://httpbin.org/get"))
+        // Init an object of Stash that will be used to store all further caching.
+        _ = Stash()
         
         return true
     }

@@ -19,9 +19,14 @@ class TeamController: UITableViewController {
         //-------------------------------------------------------------------------------------------
         
         let stash = Stash().getInstance()
-        //stash.db.purge()
+        stash.db.purge()
         
-        print(stash.pullFromStash(url: "http://httpbin.org/get"))
+        let pulledData = stash.pullFromStash(url: "http://statsapi.web.nhl.com/api/v1/teams")
+        let parser = JsonParser()
+        let json = parser.parseJson(toParse: pulledData)
+        print((json["teams"]!)[0]!)
+        
+        //print(json!["copyright"]!)
         
         //-------------------------------------------------------------------------------------------
         

@@ -15,25 +15,32 @@ class Stash {
     
     let db = Cache()
     
+    // Holds an instance of stash as the master instance, allowing further instances to reference the master.
     static var theStash: Stash?
     
     init() {
+        // Ensure the first instance is set as the master.
         if Stash.theStash == nil {
             Stash.theStash = self
             print("Stash Initialized!")
         }
     }
     
+    // Allows slave instances of stash to get the master instance.
     func getInstance() -> Stash {
         return Stash.theStash!
     }
     
+    // Abstracts all of the RESTful interaction and DB interaction away into a single call.
+    // Utilizes the endpoint's last updated time and the db itself to determine if the requested
+    // information can be pulled from the cache, or if the cache needs to be updated first.
+    // Can cause small periods of UI hang when fetching new data.
+    
     func pullFromStash(url: String) -> String {
         //if url exists in database
         if db.endpointExists(endpointToCheck: url) {
-            // If the endpoint's update time + the timeout is still less than the current time, recache the data.
+            // if the endpoint's update time + the timeout is still less than the current time, recache the data.
             let endpointUpdateRecord = db.endpointLastUpdated(endpointToCheck: url)
-            
             if ((endpointUpdateRecord == nil) || (endpointUpdateRecord!.addingTimeInterval(TimeInterval(cacheTimeout))) < Date()) {
                 print("Endpoint expired! Fetching now.")
                 // fetch url from internet
@@ -55,11 +62,11 @@ class Stash {
                 }
             }
         }
-        // Pull endpoint, updated or not, from the cache.
-        
+        // Pull endpoint, updated or not, from the cache while making sure it exists.
         while (!db.endpointExists(endpointToCheck: url)) {
             sleep(1)
         }
-        return db.pullEndpoint(endpointToPull: url)
+        let toReturn = db.pullEndpoint(endpointToPull: url)
+        return(toReturn)
     }
 }

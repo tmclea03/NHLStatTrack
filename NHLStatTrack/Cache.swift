@@ -14,14 +14,16 @@ class Cache {
     // Set name of the cache table for use in the rest of the functions.
     let tableName = "cachedEndpoints"
     
-    
+    // Will contain a list of 'expiry dates' that control when endpoints are updated or just pulled from a cache.
     private var endpointUpdateRecord = [String: Date]()
+    private var backendUpdates = [String: String]()
     
     // Create SQLITE Database File.
     let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("CachedEndpoints.sqlite")
     
     var db: OpaquePointer?
     
+    // Open the physical location of the database file, then ensure the table exists.
     init() {
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("Error opening database.")
@@ -32,6 +34,7 @@ class Cache {
         }
     }
     
+    // Adds an endpoint and it's data to the database. Additionally handles integration with 'endpointUpdateRecord'.
     func addEndpoint(endpoint: String, data: String) {
         var stmt: OpaquePointer?
         
@@ -65,10 +68,13 @@ class Cache {
         }
         
         endpointUpdateRecord[endpoint] = Date()
+        backendUpdates[endpoint] = data
         
         print("Endpoint added successfully.")
     }
     
+    // Helper function that searches for a specific endpoint stored in the db.
+    // Returns an OpaquePointer to the row if it's found, and nil if no matching rows exist.
     private func _pullEndpoint(url: String) -> OpaquePointer? {
         let queryString = "SELECT * FROM \(tableName) WHERE endpoint LIKE '" + url + "\'"
         var stmt: OpaquePointer?
@@ -79,6 +85,7 @@ class Cache {
             return nil
         }
         
+        
         while(sqlite3_step(stmt) == SQLITE_ROW) {
             return (stmt)
         }
@@ -86,22 +93,28 @@ class Cache {
         return nil
     }
     
+    // Returns the data portion of a stored point given the name of said endpoint.
     func pullEndpoint(endpointToPull: String) -> String {
         let stmt = _pullEndpoint(url: endpointToPull)
+        // If no endpoints are found, exit rather than attempting to call a pointer operation on a nil.
         if stmt == nil {
             print("No matching endpoints could be found!")
             return ""
         }
+        // Next two lines are commented out for future use.
         //let id = sqlite3_column_int(stmt, 0)
-        let endpoint = String(cString: sqlite3_column_text(stmt, 1))
-        print(endpoint)
-        let data = String(cString: sqlite3_column_text(stmt, 2))
-        return data
+        //let endpoint = String(cString: sqlite3_column_text(stmt, 1))
+        
+        let encodedData = String(cString: sqlite3_column_text(stmt, 2))
+        return backendUpdates[endpointToPull]!
+        
+        return encodedData
         
     }
     
+    // Returns a boolean describing if an endpoint exists in the db.
     func endpointExists(endpointToCheck: String) -> Bool {
-        if _pullEndpoint(url: endpointToCheck) != nil {
+        if backendUpdates[endpointToCheck] != nil {
             return true
         }
         return false
@@ -145,6 +158,7 @@ class Cache {
         print("Table purged.")
     }
     
+    // Utilizes 'endpointUpdateRecord' to determine the Date object associated with the endpoint's last update.
     func endpointLastUpdated(endpointToCheck: String) -> Date? {
         let data = endpointUpdateRecord[endpointToCheck]
         if data != nil {

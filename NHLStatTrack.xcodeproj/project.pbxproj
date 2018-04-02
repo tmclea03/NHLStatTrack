@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B1DA172071A75300DB71A4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1DA162071A75300DB71A4 /* JSONParser.swift */; };
 		DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */; };
 		DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */; };
 		DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C78BC206AC46500FC9B86 /* StandingController.swift */; };
@@ -113,6 +114,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37B1DA162071A75300DB71A4 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		37D0697920706BD400CD4038 /* Stash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stash.swift; sourceTree = "<group>"; };
 		DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatController.swift; sourceTree = "<group>"; };
 		DF0C78B6206AC1B100FC9B86 /* NHLStatTrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NHLStatTrack-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */,
 				DF7E3CB42071868600AD4CB7 /* Team.swift */,
 				DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */,
+				37B1DA162071A75300DB71A4 /* JSONParser.swift */,
 			);
 			path = NHLStatTrack;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 			files = (
 				DF0C78BD206AC46500FC9B86 /* StandingController.swift in Sources */,
 				DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */,
+				37B1DA172071A75300DB71A4 /* JSONParser.swift in Sources */,
 				DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */,
 				DF7E3CB72071918400AD4CB7 /* TeamViewCell.swift in Sources */,
 				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
