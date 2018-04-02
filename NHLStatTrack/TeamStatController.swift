@@ -30,7 +30,14 @@ class TeamStatController: UIViewController {
         self.playerList.delegate = self
         self.playerList.dataSource = self
         
-        players = Array<Player>()
+        let teamStats = APIGlue().getTeam(from:teamId)!
+
+        winLabel.text = String(describing: teamStats.win)
+        lossLabel.text = String(describing: teamStats.loss)
+        otLossLabel.text = String(describing: teamStats.otLoss)
+        pointsLabel.text = String(describing: teamStats.pts)
+        
+        players = APIGlue().getRoster(teamId: teamId)
         
         self.title = teamName
         
@@ -143,18 +150,6 @@ class TeamStatController: UIViewController {
         teamImage.image = image
         
         teamImage.setNeedsDisplay()
-        
-        let ovi = Player(name: "Steve Konowalchuck", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
-        let marner = Player(name: "Mitchell Marner", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
-        let matthews = Player(name: "Auston Matthews", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
-        let sharpe = Player(name: "Gregor Sharpe", gp: 1, goals: 0, assists: 0, points: 0, plusMinus: 0, pim: 10)
-        let mclean = Player(name: "Tyler McLean", gp: 59, goals: 38, assists: 12, points: 50, plusMinus: 20, pim: 12)
-        
-        players.append(ovi)
-        players.append(marner)
-        players.append(matthews)
-        players.append(sharpe)
-        players.append(mclean)
         
         playerList.reloadData()
     }

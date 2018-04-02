@@ -16,7 +16,7 @@ class TeamController: UITableViewController {
 
         createMenus()
         customizeBar()
-        //-------------------------------------------------------------------------------------------
+        /*/-------------------------------------------------------------------------------------------
         
         let stash = Stash().getInstance()
         stash.db.purge()
@@ -28,7 +28,7 @@ class TeamController: UITableViewController {
         
         //print(json!["copyright"]!)
         
-        //-------------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------*/
         
         // Do any additional setup after loading the view.
     }

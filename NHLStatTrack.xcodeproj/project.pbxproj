@@ -51,10 +51,10 @@
 		DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB42071868600AD4CB7 /* Team.swift */; };
 		DF7E3CB72071918400AD4CB7 /* TeamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */; };
 		DF7E3CBE2071A4F000AD4CB7 /* Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */; };
-		DF7E3CC02071B89500AD4CB7 /* UpcomingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */; };
 		DF7E3CC22071B8B300AD4CB7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC12071B8B300AD4CB7 /* Game.swift */; };
 		DF7E3CC42071C28C00AD4CB7 /* LocalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */; };
 		DF7E3CC62071CD3500AD4CB7 /* APIGlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */; };
+		DF7E3CCA2071ED9900AD4CB7 /* UpcomingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC92071ED9800AD4CB7 /* UpcomingViewCell.swift */; };
 		DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE6206AD75200F22FB9 /* TeamController.swift */; };
 		DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */; };
 		DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */; };
@@ -169,6 +169,7 @@
 		DF7E3CC12071B8B300AD4CB7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTime.swift; sourceTree = "<group>"; };
 		DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGlue.swift; sourceTree = "<group>"; };
+		DF7E3CC92071ED9800AD4CB7 /* UpcomingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingViewCell.swift; sourceTree = "<group>"; };
 		DF86BBE6206AD75200F22FB9 /* TeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
 		DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
@@ -287,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				37D0697920706BD400CD4038 /* Stash.swift */,
+				DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -376,6 +378,7 @@
 				DF86BBE6206AD75200F22FB9 /* TeamController.swift */,
 				DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */,
 				DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */,
+				DF7E3CC92071ED9800AD4CB7 /* UpcomingViewCell.swift */,
 				37B1DA162071A75300DB71A4 /* JSONParser.swift */,
 			);
 			path = NHLStatTrack;
@@ -619,6 +622,7 @@
 				DFBA74EB20706A310026BBF4 /* Cache.swift in Sources */,
 				37B1DA172071A75300DB71A4 /* JSONParser.swift in Sources */,
 				DF7E3CB52071868600AD4CB7 /* Team.swift in Sources */,
+				DF7E3CCA2071ED9900AD4CB7 /* UpcomingViewCell.swift in Sources */,
 				DF7E3CB72071918400AD4CB7 /* TeamViewCell.swift in Sources */,
 				DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */,
 				DF071E4E2070683D00A0A8B3 /* TeamStatController.swift in Sources */,
@@ -633,7 +637,6 @@
 				DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */,
 				DF7E3CC22071B8B300AD4CB7 /* Game.swift in Sources */,
 				DFBA74EC20706A310026BBF4 /* APIRequest.swift in Sources */,
-				DF7E3CC02071B89500AD4CB7 /* UpcomingViewCell.swift in Sources */,
 				DF0C78B9206AC1B200FC9B86 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
