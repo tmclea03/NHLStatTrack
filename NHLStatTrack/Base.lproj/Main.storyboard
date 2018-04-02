@@ -62,6 +62,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="YDA-XY-Bhd" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Qzr-U5-reg"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2vL-Ev-335">
                                         <rect key="frame" x="0.0" y="40" width="375" height="40"/>
@@ -108,7 +111,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="i74-Sz-Sr8" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="a4b-6c-O9N"/>
+                                            <segue destination="pWm-C9-K2S" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Fyg-Af-98C"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dJL-wr-FZl">
@@ -1117,43 +1120,83 @@
             <point key="canvasLocation" x="-834.39999999999998" y="2447.226386806597"/>
         </scene>
         <!--Upcoming Games-->
-        <scene sceneID="1na-sa-bSf">
+        <scene sceneID="1CZ-Iw-cG9">
             <objects>
-                <viewController id="7dJ-1w-Ujn" customClass="ScheduleController" customModule="NHLStatTrack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UFM-vU-hLG">
+                <tableViewController id="CMD-Te-lpc" customClass="ScheduleController" customModule="NHLStatTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s02-5P-oyy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="vER-kw-bOx"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Upcoming Games" id="y52-7q-JWW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="Nav" id="7lT-r7-EbQ"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="ka3-vh-d7P">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ka3-vh-d7P" id="SgC-z0-Wxi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lp4-Kz-MLu">
+                                            <rect key="frame" x="16" y="0.0" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAA-lh-jf1">
+                                            <rect key="frame" x="16" y="59" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HomeTeam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzh-kG-0Qk">
+                                            <rect key="frame" x="70" y="10" width="202" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AwayTeam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRD-7h-fgW">
+                                            <rect key="frame" x="70" y="68" width="202" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-ij-QUC">
+                                            <rect key="frame" x="31" y="43" width="11" height="12"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:59pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo0-bX-Xy1">
+                                            <rect key="frame" x="295" y="32" width="68" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mon 24th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1Q-hk-iQo">
+                                            <rect key="frame" x="292" y="51" width="74" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CMD-Te-lpc" id="Bpw-oM-T2J"/>
+                            <outlet property="delegate" destination="CMD-Te-lpc" id="gop-O7-MW8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Upcoming Games" id="vgW-ek-C8o">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Nav" id="MYY-eV-Wr6"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="7lT-r7-EbQ" id="oaz-Lu-5O9"/>
+                        <outlet property="menuButton" destination="MYY-eV-Wr6" id="awp-Ur-P1g"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="80z-VZ-yFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LsL-JP-YrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="1579"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JCM-0q-HSE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i74-Sz-Sr8" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zj2-0f-tAY">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7dJ-1w-Ujn" kind="relationship" relationship="rootViewController" id="0L8-Co-kJH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LWL-79-FP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1492" y="787.55622188905556"/>
+            <point key="canvasLocation" x="1021.6" y="1576.4617691154424"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q06-x4-Oww">
@@ -1171,7 +1214,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAz-Nr-toh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184.8000000000002" y="787.55622188905556"/>
+            <point key="canvasLocation" x="1846" y="788"/>
         </scene>
         <!--Standings-->
         <scene sceneID="EDR-Xf-xgF">
@@ -1262,7 +1305,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igr-Ud-5Vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="1577.3613193403301"/>
+            <point key="canvasLocation" x="2665" y="1577"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1v8-hp-ouA">
@@ -1298,7 +1341,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRH-KB-hbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="787.55622188905556"/>
+            <point key="canvasLocation" x="2665" y="788"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Erm-EX-fbb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pWm-C9-K2S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jIm-JL-a8P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CMD-Te-lpc" kind="relationship" relationship="rootViewController" id="9fo-XL-gaE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuK-Sr-Li7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="788"/>
         </scene>
     </scenes>
     <resources>
@@ -1340,6 +1401,7 @@
         <image name="live" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Qzr-U5-reg"/>
         <segue reference="rdu-4m-Zat"/>
     </inferredMetricsTieBreakers>
 </document>

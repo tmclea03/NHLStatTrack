@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ScheduleController: UIViewController {
+class ScheduleController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         createMenus()
         customizeBar()
         
