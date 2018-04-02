@@ -11,11 +11,19 @@ import UIKit
 class ScheduleController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    var games:Array<Game>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        games = Array<Game>()
+        
+        games.append(Game.init(home: "HOME", away: "AWAY", time: "04/02/18\n7:30PM"))
+        
         createMenus()
         customizeBar()
+        
+        self.tableView.reloadData()
         
         // Do any additional setup after loading the view.
     }
@@ -54,6 +62,20 @@ class ScheduleController: UITableViewController {
 
     override func applicationFinishedRestoringState() {
         super.applicationFinishedRestoringState()
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return games.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "UpcomingCell", for: indexPath) as! UpcomingViewCell
+        
+        if (indexPath.row < games.count) {
+            cell.configureGame(games[indexPath.row])
+        }
+        
+        return cell
     }
     
     /*

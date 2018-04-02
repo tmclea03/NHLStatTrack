@@ -30,7 +30,7 @@ class LocalTime:NSObject {
         
         let localFormatter = DateFormatter()
         localFormatter.timeZone = NSTimeZone.system
-        localFormatter.dateFormat = "M/d/yy 'at' h:mma"
+        localFormatter.dateFormat = "M/d/yy\nh:mma"
         
         let localTime = localFormatter.string(from: destDate)
         

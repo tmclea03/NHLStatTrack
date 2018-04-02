@@ -53,6 +53,7 @@
 		DF7E3CC02071B89500AD4CB7 /* UpcomingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */; };
 		DF7E3CC22071B8B300AD4CB7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC12071B8B300AD4CB7 /* Game.swift */; };
 		DF7E3CC42071C28C00AD4CB7 /* LocalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */; };
+		DF7E3CC62071CD3500AD4CB7 /* APIGlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */; };
 		DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE6206AD75200F22FB9 /* TeamController.swift */; };
 		DF86BBE9206AD96400F22FB9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */; };
 		DF86BBEB206AE4D300F22FB9 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */; };
@@ -165,6 +166,7 @@
 		DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewCell.swift; sourceTree = "<group>"; };
 		DF7E3CC12071B8B300AD4CB7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTime.swift; sourceTree = "<group>"; };
+		DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGlue.swift; sourceTree = "<group>"; };
 		DF86BBE6206AD75200F22FB9 /* TeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
 		DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
@@ -348,30 +350,31 @@
 		DFB04A1B206457CC000B3074 /* NHLStatTrack */ = {
 			isa = PBXGroup;
 			children = (
-				DFB04A28206457CC000B3074 /* Info.plist */,
+				DF7E3CC52071CD3500AD4CB7 /* APIGlue.swift */,
+				DFBA74EA20706A310026BBF4 /* APIRequest.swift */,
+				DFB04A1C206457CC000B3074 /* AppDelegate.swift */,
 				DFB04A23206457CC000B3074 /* Assets.xcassets */,
+				DFBA74E920706A300026BBF4 /* Cache.swift */,
+				DF7E3CC12071B8B300AD4CB7 /* Game.swift */,
+				DFB04A28206457CC000B3074 /* Info.plist */,
+				DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */,
+				DF86BBEC206AE77900F22FB9 /* LiveController.swift */,
+				DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */,
+				DFB04A20206457CC000B3074 /* Main.storyboard */,
+				DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */,
 				DF0C78B6206AC1B100FC9B86 /* NHLStatTrack-Bridging-Header.h */,
+				DF7E3CB220717E3A00AD4CB7 /* Player.swift */,
+				DF7E3CB020717E2E00AD4CB7 /* PlayerViewCell.swift */,
+				DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */,
+				DF0C78BC206AC46500FC9B86 /* StandingController.swift */,
+				DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */,
 				DF0C78B7206AC1B200FC9B86 /* SWRevealViewController.h */,
 				DF0C78B8206AC1B200FC9B86 /* SWRevealViewController.m */,
-				DFB04A20206457CC000B3074 /* Main.storyboard */,
-				DFB04A25206457CC000B3074 /* LaunchScreen.storyboard */,
-				DFBA74EA20706A310026BBF4 /* APIRequest.swift */,
-				DFBA74E920706A300026BBF4 /* Cache.swift */,
-				DFB04A1C206457CC000B3074 /* AppDelegate.swift */,
-				DF86BBE8206AD96400F22FB9 /* MenuViewController.swift */,
-				DF0C78BC206AC46500FC9B86 /* StandingController.swift */,
-				DF86BBE6206AD75200F22FB9 /* TeamController.swift */,
-				DF86BBEA206AE4D300F22FB9 /* ScheduleController.swift */,
-				DF86BBEC206AE77900F22FB9 /* LiveController.swift */,
-				DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */,
-				DF7E3CB020717E2E00AD4CB7 /* PlayerViewCell.swift */,
-				DF7E3CB220717E3A00AD4CB7 /* Player.swift */,
-				DF7E3CBD2071A4F000AD4CB7 /* Stash.swift */,
 				DF7E3CB42071868600AD4CB7 /* Team.swift */,
+				DF86BBE6206AD75200F22FB9 /* TeamController.swift */,
+				DF071E4D2070683D00A0A8B3 /* TeamStatController.swift */,
 				DF7E3CB62071918400AD4CB7 /* TeamViewCell.swift */,
 				DF7E3CBF2071B89500AD4CB7 /* UpcomingViewCell.swift */,
-				DF7E3CC12071B8B300AD4CB7 /* Game.swift */,
-				DF7E3CC32071C28C00AD4CB7 /* LocalTime.swift */,
 			);
 			path = NHLStatTrack;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				DF7E3CBE2071A4F000AD4CB7 /* Stash.swift in Sources */,
 				DF86BBED206AE77900F22FB9 /* LiveController.swift in Sources */,
 				DF7E3CB120717E2E00AD4CB7 /* PlayerViewCell.swift in Sources */,
+				DF7E3CC62071CD3500AD4CB7 /* APIGlue.swift in Sources */,
 				DFB04A1D206457CC000B3074 /* AppDelegate.swift in Sources */,
 				DF86BBE7206AD75200F22FB9 /* TeamController.swift in Sources */,
 				DF7E3CC22071B8B300AD4CB7 /* Game.swift in Sources */,
