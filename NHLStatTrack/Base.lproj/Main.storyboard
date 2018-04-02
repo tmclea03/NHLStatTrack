@@ -114,30 +114,6 @@
                                             <segue destination="pWm-C9-K2S" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Fyg-Af-98C"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dJL-wr-FZl">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="40"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dJL-wr-FZl" id="VvU-kW-twh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="live" translatesAutoresizingMaskIntoConstraints="NO" id="g5f-WT-Wvm">
-                                                    <rect key="frame" x="16" y="2" width="32" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM2-YJ-lKA">
-                                                    <rect key="frame" x="56" y="12" width="31" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="mY5-1p-XLO" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Lf7-vC-TpJ"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1198,24 +1174,6 @@
             </objects>
             <point key="canvasLocation" x="1021.6" y="1576.4617691154424"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="q06-x4-Oww">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mY5-1p-XLO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXB-h8-BsU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Jtp-7I-FMi" kind="relationship" relationship="rootViewController" id="V0Q-tM-3l8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TAz-Nr-toh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1846" y="788"/>
-        </scene>
         <!--Standings-->
         <scene sceneID="EDR-Xf-xgF">
             <objects>
@@ -1398,7 +1356,6 @@
         <image name="calendar" width="32" height="32"/>
         <image name="cup" width="32" height="32"/>
         <image name="jersey" width="32" height="32"/>
-        <image name="live" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Qzr-U5-reg"/>
