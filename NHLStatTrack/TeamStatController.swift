@@ -17,6 +17,7 @@ class TeamStatController: UIViewController {
     @IBOutlet weak var playerList: UITableView!
     
     var teamName = String("")
+    var teamId = 0
     var players:Array<Player>!
     
     enum CellID {
