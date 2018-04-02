@@ -16,9 +16,7 @@ class ScheduleController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        games = Array<Game>()
-        
-        games.append(Game.init(home: "HOME", away: "AWAY", time: "04/02/18\n7:30PM"))
+        games = APIGlue().getUpcoming()
         
         createMenus()
         customizeBar()

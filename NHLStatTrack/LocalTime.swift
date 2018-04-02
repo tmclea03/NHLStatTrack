@@ -13,7 +13,7 @@ class LocalTime:NSObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         
-        let sourceDate = dateFormatter.date(from: "2018-04-02T23:00:00Z")
+        let sourceDate = dateFormatter.date(from: time)
         
         if (sourceDate == nil) {
             print("Source Date is nil")

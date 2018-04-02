@@ -17,6 +17,18 @@ class UpcomingViewCell: UITableViewCell {
     
     
     func configureGame(_ game:Game) {
+        if game.awayImg.size.width > game.awayImg.size.height {
+            awayImg.contentMode = UIViewContentMode.scaleAspectFit
+        } else {
+            awayImg.contentMode = UIViewContentMode.scaleAspectFill
+        }
+        
+        if game.homeImg.size.width > game.homeImg.size.height {
+            homeImg.contentMode = UIViewContentMode.scaleAspectFit
+        } else {
+            homeImg.contentMode = UIViewContentMode.scaleAspectFill
+        }
+        
         awayImg.image = game.awayImg
         homeImg.image = game.homeImg
         awayName.text = game.away

@@ -30,6 +30,9 @@ class TeamStatController: UIViewController {
         self.playerList.delegate = self
         self.playerList.dataSource = self
         
+        print(teamId)
+        print(teamName)
+        
         let teamStats = APIGlue().getTeam(from:teamId)!
 
         winLabel.text = String(describing: teamStats.win)

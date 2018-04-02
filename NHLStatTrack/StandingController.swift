@@ -20,32 +20,7 @@ class StandingController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        teams = Array<Array<Team>>()
-        
-        var atlantic = Array<Team>()
-        var metro = Array<Team>()
-        var central = Array<Team>()
-        var pacific = Array<Team>()
-        
-        var team1 = Team(name: "Lightning", gp: 78, win: 49, loss: 17, otLoss: 12, pts: 110)
-        var team2 = Team(name: "Bruins", gp: 78, win: 52, loss: 22, otLoss: 4, pts: 108)
-        
-        atlantic.append(team1)
-        atlantic.append(team1)
-        atlantic.append(team1)
-        atlantic.append(team1)
-        atlantic.append(team1)
-        atlantic.append(team1)
-        atlantic.append(team1)
-        atlantic.append(team1)
-        metro.append(team1)
-        central.append(team1)
-        pacific.append(team1)
-        
-        teams.append(atlantic)
-        teams.append(metro)
-        teams.append(central)
-        teams.append(pacific)
+        teams = APIGlue().getStandings()
         
         createMenus()
         customizeBar()
